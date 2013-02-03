@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="main">
+		<select name="uf" id="uf" data-content-source="data/content.html" data-insert-into="#cidade" data-insert-into-source="data/content.html?:value&:id" data-render-mode="append"><option value="">Selecione</option></select>
+		<select name="cidade" id="cidade"><option value="">Selecione uma UF...</option></select>
+		<a href="data/data.html" data-load-into="#target">Data</a>
+		<div id="target"></div>
+		<form action="" container="inputTeste">
+			<fieldset>
+				<legend>Teste</legend>
+				<div><label for="input1"></label><input type="" id="input1"></div>
+				<div><label for="input2"></label><input type="" id="input2"></div>
+				<div><label for="input3"></label><input type="" id="input3"></div>
+				<div><label for="input4"></label><input type="" id="input4"></div>
+			</fieldset>
+		</form>
+	</div>
+	
+	<script src="required/jquery-1.9.0.min.js"></script>
+	<script src="required/underscore-min.js"></script>
+	<script id="put_delete" src="required/jquery.putdelete.js"></script>
+	<script id="formWork" src="lib/formWork.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#main').formWork();
+		})
+	</script>
+</body>
+</html>
